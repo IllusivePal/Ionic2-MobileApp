@@ -9,10 +9,16 @@ import {TeamDetailComponent} from '../pages';
 
 export class TeamsComponent{
     
-    constructor(private nav:NavController){}
+    teams = [
+        { id: 1 , name: 'HC Elite'},
+        { id: 2, name: 'Team Takeover'},
+        { id: 3, name: 'DC Thunder'}
 
-    itemTapped()
+    ];
+    constructor(private nav:NavController){}
+    
+    itemTapped($events,team)
     {
-        this.nav.push(TeamDetailComponent)
+        this.nav.push(TeamDetailComponent,team)
     }
 }
