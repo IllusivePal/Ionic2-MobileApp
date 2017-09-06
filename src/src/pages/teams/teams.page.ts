@@ -1,6 +1,6 @@
 import {Component} from '@angular/core';
 import {NavController} from 'ionic-angular';
-import {TeamDetailComponent} from '../pages';
+import {TeamHomeComponent} from '../pages';
 
 @Component({
     selector:'teams',
@@ -19,6 +19,7 @@ export class TeamsComponent{
     
     itemTapped($events,team)
     {
-        this.nav.push(TeamDetailComponent,team)
+       
+        this.nav.push(TeamHomeComponent,team)
     }
 }
