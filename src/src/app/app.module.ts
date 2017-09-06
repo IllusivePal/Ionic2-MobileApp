@@ -9,6 +9,8 @@ import {
         ,TournamentComponent
         ,GameComponent
         ,TeamsComponent
+        ,StandingsComponent
+        ,TeamHomeComponent
       } from '../pages/pages';
 
 
@@ -23,7 +25,10 @@ import { SplashScreen } from '@ionic-native/splash-screen';
     TeamDetailComponent,
     TournamentComponent,
     GameComponent,
-    TeamsComponent
+    TeamsComponent,
+    StandingsComponent,
+    TeamHomeComponent
+    
   ],
   imports: [
     BrowserModule,
@@ -36,7 +41,10 @@ import { SplashScreen } from '@ionic-native/splash-screen';
     TeamDetailComponent,
     TournamentComponent,
     GameComponent,
-    TeamsComponent
+    TeamsComponent,
+    StandingsComponent,
+    TeamHomeComponent
+    
   ],
   providers: [
     StatusBar,
